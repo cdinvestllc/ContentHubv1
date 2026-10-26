@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens: Creator Resource Hub. Light is :root, dark is .dark (next-themes toggles the class). */
+@layer base {
+    :root {
+        --background: 240 56% 98%;
+        --foreground: 240 20% 4%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 20% 4%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 20% 4%;
+        --primary: 272 63% 46%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 240 30% 94%;
+        --secondary-foreground: 240 20% 4%;
+        --muted: 240 30% 95%;
+        --muted-foreground: 240 9% 40%;
+        --accent: 272 60% 95%;
+        --accent-foreground: 272 63% 30%;
+        --destructive: 0 72% 46%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 240 18% 89%;
+        --input: 240 18% 86%;
+        --ring: 272 63% 46%;
+        --gold: 47 100% 50%;
+        --gold-ink: 40 100% 29%;
+        --success: 151 100% 45%;
+        --success-ink: 151 100% 25%;
+        --warning: 32 100% 50%;
+        --warning-ink: 28 100% 36%;
+        --brand-ink: 272 63% 42%;
+        --radius: 0.85rem;
+    }
+    .dark {
+        --background: 240 20% 4%;
+        --foreground: 0 0% 100%;
+        --card: 240 21% 11%;
+        --card-foreground: 0 0% 100%;
+        --popover: 240 21% 11%;
+        --popover-foreground: 0 0% 100%;
+        --primary: 272 63% 46%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 240 16% 16%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 240 16% 14%;
+        --muted-foreground: 240 9% 60%;
+        --accent: 240 16% 18%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 72% 55%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 240 14% 19%;
+        --input: 240 14% 23%;
+        --ring: 272 70% 62%;
+        --gold: 47 100% 50%;
+        --gold-ink: 47 100% 50%;
+        --success: 151 100% 45%;
+        --success-ink: 151 100% 45%;
+        --warning: 32 100% 50%;
+        --warning-ink: 32 100% 56%;
+        --brand-ink: 272 85% 76%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background font-sans text-foreground antialiased;
+    }
+    h1, h2, h3, h4 {
+        @apply font-display;
+    }
+    ::selection {
+        background: hsl(var(--primary) / 0.45);
+        color: #fff;
+    }
+}
+
+@layer utilities {
+    .scrollbar-none { scrollbar-width: none; }
+    .scrollbar-none::-webkit-scrollbar { display: none; }
+    .bg-grid {
+        background-image:
+            linear-gradient(hsl(var(--foreground) / 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, hsl(var(--foreground) / 0.05) 1px, transparent 1px);
+        background-size: 44px 44px;
+    }
+    .glass {
+        background: hsl(var(--background) / 0.72);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+    }
+    .pb-safe { padding-bottom: calc(env(safe-area-inset-bottom) + 0.5rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}

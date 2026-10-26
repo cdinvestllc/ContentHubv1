@@ -1,0 +1,131 @@
+{
+  "project_name": "Creator Resource Hub - B2B Creator Marketplace",
+  "app_type": "marketplace / saas_app",
+  "design_archetype": "Electric Cyber-Tactical Marketplace (Swiss & High-Contrast Fusion)",
+  "color_palette": {
+    "theme_modes": ["dark", "light", "system"],
+    "default_mode": "dark",
+    "primary_colors": {
+      "obsidian": "#0A0A0F",
+      "charcoal": "#161622",
+      "electric_purple": "#7B2CBF",
+      "gold": "#FFC700",
+      "green": "#00E575",
+      "orange": "#FF8800",
+      "white_text": "#FFFFFF",
+      "muted_lavender": "#8F8FA3"
+    },
+    "semantic_mapping": {
+      "background_dark": "#0A0A0F",
+      "card_dark": "#161622",
+      "border_dark": "rgba(255, 255, 255, 0.1)",
+      "text_primary_dark": "#FFFFFF",
+      "text_muted_dark": "#8F8FA3",
+      "accent_primary": "#7B2CBF",
+      "accent_gold": "#FFC700",
+      "accent_success": "#00E575",
+      "accent_warning": "#FF8800",
+      "background_light": "#F8F8FD",
+      "card_light": "#FFFFFF",
+      "border_light": "#E2E2EC",
+      "text_primary_light": "#0A0A0F",
+      "text_muted_light": "#646478"
+    }
+  },
+  "typography": {
+    "headings_font": "Plus Jakarta Sans, Outfit, sans-serif",
+    "body_font": "Inter, system-ui, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "hierarchy": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "subsection_h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "card_h4": "text-lg sm:text-xl font-semibold",
+      "body_text": "text-base text-muted-foreground leading-relaxed",
+      "caption_label": "text-xs uppercase tracking-[0.2em] font-mono text-muted-foreground"
+    }
+  },
+  "layout_and_navigation": {
+    "mobile_first": true,
+    "mode_toggle": {
+      "modes": ["Hiring", "Working"],
+      "hiring_description": "Find top video editors, 3D artists, thumbnail designers, scriptwriters, and creative strategists.",
+      "working_description": "Apply to high-paying creator brand gigs, manage active tasks, unlock direct brand contacts, track tokens."
+    },
+    "mobile_bottom_tabs": {
+      "hiring_mode_tabs": [
+        {"id": "feed", "label": "Feed", "icon": "Sparkles", "description": "9:16 vertical portfolio showcase feed"},
+        {"id": "talent", "label": "Talent", "icon": "Search", "description": "Search creators by skill, rate, availability"},
+        {"id": "jobs", "label": "My Jobs", "icon": "Briefcase", "description": "Manage posted jobs, applications & shortlists"},
+        {"id": "workspace", "label": "Workspace", "icon": "MessageSquare", "description": "Inbox messages, active tasks & wallet"}
+      ],
+      "working_mode_tabs": [
+        {"id": "gigs", "label": "Gig Board", "icon": "Flame", "description": "Explore open creator job postings"},
+        {"id": "tasks", "label": "My Tasks", "icon": "CheckSquare", "description": "Kanban workspace for active client projects"},
+        {"id": "wallet", "label": "Tokens", "icon": "Coins", "description": "Token balance, unlock contact credits, boost"},
+        {"id": "profile", "label": "Profile", "icon": "User", "description": "Edit portfolio cards, rates, privacy settings"}
+      ]
+    },
+    "desktop_navigation": {
+      "sidebar_nav": "Sticky sidebar on desktop md:flex md:w-64 border-r",
+      "top_bar": "Header with mode switch, theme selector (Dark/Light/System), Token indicator, Notifications & User avatar"
+    }
+  },
+  "key_screens_specs": {
+    "landing_page": {
+      "components": ["Hero Showcase", "Interactive Mode Switcher Demo", "Featured 9:16 Video Feed Grid", "Token Mechanics Explainer", "Category Chips", "CTA Sign up"],
+      "feel": "High conversion, glowing neon grid borders, micro-interactions"
+    },
+    "auth_modal_screen": {
+      "components": ["Mock Sign In / Sign Up Tabs", "Role Selection (Creator vs Brand)", "Terms & Community Guidelines Consent Checkbox"],
+      "validation": "Simulated authentication with instant state updates"
+    },
+    "talent_feed": {
+      "portfolio_card_aspect": "9:16 ratio (aspect-[9/16])",
+      "card_features": ["Video preview thumbnail", "Creator avatar overlay", "Primary skill badge", "Day rate / Project rate", "Quick shortlist bookmark button", "Token unlock contact button"],
+      "filter_chips": ["All", "Video Editors", "3D Motion", "Thumbnail Artists", "VFX Special", "Scriptwriters", "AI Content"]
+    },
+    "talent_profile_page": {
+      "sections": ["Header Banner", "Avatar & Verified Badge", "Bio & Social Proof Stats", "9:16 Portfolio Reel Grid", "Services & Price Packages", "Reviews & Past Clients", "Direct Contact (Requires Tokens)"]
+    },
+    "job_board": {
+      "features": ["Search & Budget Range Filter", "Urgency Badges (Hot / High Token Bounty)", "Apply Modal with Proposal & Rate Quote", "Create Project/Job Posting Drawer"]
+    },
+    "workspace_and_inbox": {
+      "inbox": "Real-time style message thread with file attachments simulation",
+      "project_board": "Kanban columns (To Do, In Progress, Review, Completed) with drag-and-drop / click-to-move cards"
+    },
+    "token_wallet": {
+      "balance_display": "Glowing Gold/Purple Token Card",
+      "actions": ["Buy Credit Bundle", "Unlock Brand Direct Contact (5 Tokens)", "Boost Job Posting (10 Tokens)", "Transaction History"]
+    },
+    "privacy_settings": {
+      "controls": ["Public Portfolio Toggle", "Hide Earnings/Rates Toggle", "Allow Direct Messages Switch", "Incognito Browsing Mode"]
+    }
+  },
+  "image_urls": {
+    "creators": [
+      {"name": "Sophia Vance (Video Editor)", "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHxfYXJ0aXN0MXxlbnwwfHx8fDE3OTI5ODQ2NzJ8MA&ixlib=rb-4.1.0&q=85"},
+      {"name": "Marcus Chen (3D Motion)", "url": "https://images.unsplash.com/photo-1627244714766-94dab62ed964?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwyfHxjcmVhdG9yJTIwZWRpdG9yfGVufDB8fHx8MTc5Mjk4NDY3Mnww&ixlib=rb-4.1.0&q=85"},
+      {"name": "Elena Rostova (Thumbnail Designer)", "url": "https://images.unsplash.com/photo-1581841064838-a470c740e8ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwzfHxkZXNpZ25lciUyMHBvcnRyYWl0fGVufDB8fHx8MTc5Mjk4NDY3N3ww&ixlib=rb-4.1.0&q=85"},
+      {"name": "David Kim (VFX Creator)", "url": "https://images.unsplash.com/photo-1587397845856-e6cf49176c70?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwyfHxkZXNpZ25lciUyMHBvcnRyYWl0fGVufDB8fHx8MTc5Mjk4NDY3N3ww&ixlib=rb-4.1.0&q=85"}
+    ],
+    "workspaces": [
+      {"name": "Editing Suite 1", "url": "https://images.unsplash.com/photo-1607112812619-182cb1c7bb61?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwyfHx2aWRlbyUyMGVkaXRvciUyMGRlc2t8ZW58MHx8fHwxNzkyOTg0Njc3fDA&ixlib=rb-4.1.0&q=85"},
+      {"name": "Mac Studio Setup", "url": "https://images.unsplash.com/photo-1579109652910-99b9be06aaec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHx2aWRlbyUyMGVkaXRvciUyMGRlc2t8ZW58MHx8fHwxNzkyOTg0Njc3fDA&ixlib=rb-4.1.0&q=85"}
+    ]
+  },
+  "testing_and_accessibility": {
+    "data_testid_rules": "All interactive elements (buttons, links, inputs, tabs, mode switchers, modals) MUST include data-testid with kebab-case identifiers. E.g., data-testid='mode-toggle-hiring', data-testid='bottom-tab-feed', data-testid='token-wallet-card', data-testid='portfolio-card-9-16-1'",
+    "contrast_standards": "Text contrast must meet APCA/WCAG AA standards. Hover states must explicitly set text color (e.g. hover:bg-purple-700 hover:text-white)."
+  },
+  "instructions_to_main_agent": [
+    "Use React JavaScript (.js / .jsx) components matching existing src/ structure.",
+    "Support Dark, Light, and System theme switching dynamically via state or next-themes/Tailwind dark class.",
+    "Implement Hiring vs Working mode toggle that updates both header context and mobile bottom navigation tabs (4 tabs per mode).",
+    "Ensure talent portfolio items strictly use 9:16 vertical video/image card ratio with overlay details.",
+    "Provide seed data for 8+ talent profiles, 6+ job listings, mock chat messages, task board columns, and token history.",
+    "Include demo data badges (DEMO DATA / SIMULATED ACTION) on simulated contact unlocks, job posts, and token purchases.",
+    "Add toast notifications using 'sonner' for actions like shortlisting, unlocking contacts, creating jobs, and switching modes."
+  ]
+}
